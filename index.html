@@ -1,0 +1,244 @@
+<!-- ✅ FINAL RESPONSIVE INDEX.HTML (Full Code) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komal – Experience Portfolio</title>
+
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- One‑off Mobile Fixes -->
+  <style>
+    .container.projects-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .project-box {
+      flex: 1 1 300px;
+      max-width: 485px;
+    }
+    .project-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Ensure project section is mobile-friendly even if default container used */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .project-box {
+        width: 90% !important;
+        max-width: none;
+      }
+    }
+  </style>
+  <!-- Responsive Fixes for All Sections -->
+  <style>
+    @media (max-width: 768px) {
+      .home {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 12rem;
+      }
+      .home-img img {
+        width: 80vw;
+        height: auto;
+        margin-top: 3rem;
+        border-radius: 50%;
+      }
+      .Portfolio-container {
+        flex-direction: column;
+        display: flex;
+        gap: 2rem;
+      }
+      .Skills-container {
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+      }
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+      }
+      .contact form .input-box {
+        flex-direction: column;
+      }
+      .contact form .input-box input {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <a href="#" class="logo">Komal</a>
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="Komal_Sr_Product_Manager_CV Updated.pdf" download class="btn" style="color: black;">
+        <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+      </a>
+    </nav>
+  </header>
+
+  <!-- HOME -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, I'm</h3>
+      <h1><span>Komal</span></h1>
+      <h3>Senior <span>Product Manager</span></h3>
+      <p>Experienced Product Manager with over 5 years in driving digital product strategy, development, and optimization. Skilled in Agile methodologies, UI/UX design, A/B testing, UAT, cross-functional, and API testing. Currently leading product innovation at Justdial Ltd., delivering user-centric solutions that align with business goals and enhance customer experience.</p>
+        <div class="social-media">
+        <a href="https://www.linkedin.com/in/komal-fulara-50a9a41b8/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Komal971"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:komalf1997@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+    <div class="home-img">
+      <img src="profile2.jpg" alt="Profile image">
+    </div>
+  </section>
+
+
+<!-- EXPERIENCE -->
+<section class="Portfolio" id="experience">
+  <h2 class="heading">My <span>Experience</span></h2>
+  <div class="Portfolio-container" style="grid-template-columns: 1fr; gap: 3rem;">
+
+    <div class="Portfolio-box" style="min-height: 250px;">
+      <img src="jd.jpg" alt="Justdial Experience">
+      <div class="Portfolio-layer">
+        <h4>Senior Product Manager<br>Justdial Ltd. (Apr 2021 - Present)</h4>
+        <p>
+          • Managed mobile and web modules for the sales team<br>
+          • Led UI/UX revamp using Figma, Adobe XD, and HTML<br>
+          • Delivered user-driven updates through Agile sprints<br>
+          • Conducted A/B and API testing using Postman<br>
+          • Interviewed clients to identify pain points and improve features<br>
+          • AI tools – AR for targeting, OCR for automation, Chatbot for support
+        </p>
+      </div>
+    </div>
+
+    <div class="Portfolio-box" style="min-height: 250px;">
+      <img src="sam.jpg" alt="Samsung Experience">
+      <div class="Portfolio-layer">
+        <h4>Product Engineer<br>Samsung (Apr 2019 - Aug 2020)</h4>
+        <p>
+          • Defined roadmap and aligned teams using Agile<br>
+          • Improved CRM workflows and data accuracy<br>
+          • Scaled secure sales modules with user feedback<br>
+          • Ensured platform met security standards
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ <!-- ========== PROJECTS ========== -->
+  <section class="Projects" id="projects">
+    <h2 class="heading">My <span>Projects</span></h2>
+    <div class="container projects-flex">
+      <div class="project-box" onclick="window.open('Instagram_Case_Study.pdf','_blank')">
+        <img src="Insta-thumbnail.jpg.png" alt="Instagram Case Study Thumbnail" />
+      </div>
+      <div class="project-box" onclick="window.open('Netflix_Case_Study.pdf','_blank')">
+        <img src="Netflix-thumbnail.jpg.png" alt="Netflix Case Study Thumbnail" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+<section class="education" id="education">
+  <h2 class="heading">My <span>Education</span></h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+      <div class="timeline-content">
+        <h3>MBA - Production & Operations</h3>
+        <span class="date">2025 – 2027</span>
+        <p>Symbiosis University, Pune, India</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fa-solid fa-laptop-code"></i></div>
+      <div class="timeline-content">
+        <h3>MCA - Computer Applications</h3>
+        <span class="date">2018 – 2021</span>
+        <p>Maharaja Agrasen College, Delhi</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fa-solid fa-terminal"></i></div>
+      <div class="timeline-content">
+        <h3>Digital Transformation Program</h3>
+        <span class="date">2019</span>
+        <p>NIIT, Connaught Place – Java Enterprise App</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fa-solid fa-square-root-alt"></i></div>
+      <div class="timeline-content">
+        <h3>B.Sc. (Hons) Mathematics</h3>
+        <span class="date">2014 – 2017</span>
+        <p>Maharaja Agrasen College, Delhi</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fa-solid fa-flask"></i></div>
+      <div class="timeline-content">
+        <h3>Intermediate - Science with Mathematics</h3>
+        <span class="date">2013 – 2014</span>
+        <p>RKSV, Delhi</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
+  <form action="https://formspree.io/f/mpwreyrl" method="POST">
+    <div class="input-box">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="_replyto" placeholder="Email Address" required>
+    </div>
+    <div class="input-box">
+      <input type="text" name="subject" placeholder="Subject">
+      <input type="tel" name="phone" placeholder="Phone Number">
+    </div>
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Send Message" class="btn">
+  </form>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 Komal | All Rights Reserved.</p>
+    <a href="#home" class="scroll-top"><i class="fa-solid fa-angle-up"></i></a>
+  </footer>
+</body>
+</html>
